@@ -45,9 +45,7 @@
     } else if (fifthSet.textContent == '') {
       fifthSet.textContent = `Set 5 ${pointsA.textContent}-${pointsB.textContent}`;
       currentSet.textContent ="試合終了";
-    } else {
-      return;
-    }
+    } 
   }
 
   let resetPoints = () => {
