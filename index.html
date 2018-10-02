@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Score board</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="pContainer">
+      <h4 id="currentSet"></h4>
+      <h4>得点</h4>
+      <div class="controls">
+        <div id="pointsA">0</div>
+        <div>-</div>
+        <div id="pointsB">0</div>
+      </div>
+      <div class="buttons">
+        <div id="plusA">+</div>
+        <div id="minusA">-</div>
+        <div></div>
+        <div id="plusB">+</div>
+        <div id="minusB">-</div>
+      </div>
+      <button id="sendResult">Send</button>
+    </div>
+    <div class="setContainer">
+      <h4>セットカウント</h4>
+      <div class="setCounts">
+        <div id="countsA">0</div>
+        <div>-</div>
+        <div id="countsB">0</div>
+      </div>
+      <p id="result"></p>
+      <div class="resultD" id="firstSet"></div>
+      <div class="resultD" id="secondSet"></div>
+      <div class="resultD" id="thirdSet"></div>
+      <div class="resultD" id="forthSet"></div>
+      <div class="resultD" id="fifthSet"></div>
+      <button id="resetAll">Reset</button>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

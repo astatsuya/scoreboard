@@ -1,0 +1,119 @@
+body {
+  font-family: 'Courier New', sans-serif;
+  font-size: 14px;
+  background: #eee;
+}
+
+.container {
+  width: 400px;
+  height: 570px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  background: white;
+}
+
+.pContainer {
+  width: 300px;
+  margin: 0 auto;
+  float: top;
+}
+
+.controls {
+  overflow: hidden;
+}
+
+.controls > div {
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  background-color: #eee;
+  font-size: 30px;
+  text-align: center;
+}
+
+.buttons {
+  margin: 20px 0;
+}
+
+.buttons > div {
+  font-size: 20px;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  user-select: none;
+  float: left;
+}
+
+.buttons > div + div {
+  margin-left: 5px;
+}
+
+#plusA {
+  width: 55px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: #eee;
+  cursor: pointer;
+}
+
+#minusA {
+  width: 55px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: #eee;
+  cursor: pointer;
+}
+
+#plusB {
+  width: 55px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: #eee;
+  cursor: pointer;
+}
+
+#minusB {
+  width: 55px;
+  border-radius: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  background: #eee;
+  cursor: pointer;
+}
+
+#sendResult {
+  margin-top: 20px;
+}
+
+.setContainer {
+  width: 300px;
+  margin: 0 auto;
+  float: bottom;
+}
+
+
+
+.setCounts > div {
+  width: 100px;
+  height: 40px;
+  margin: 0 0 20px 0;
+  line-height: 40px;
+  float: left;
+  background: pink;
+  font-size: 30px;
+  text-align: center;
+}
+
+.resultD {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.setContainer p {
+  font-size: 20px;
+}
