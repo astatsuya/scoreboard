@@ -45,7 +45,7 @@
     } else if (fifthSet.textContent == '') {
       fifthSet.textContent = `Set 5 ${pointsA.textContent}-${pointsB.textContent}`;
       currentSet.textContent ="試合終了";
-    } 
+    }
   }
 
   let resetPoints = () => {
@@ -75,6 +75,7 @@
       }
     }
   });
+
 
   minusA.addEventListener ('click', () => {
     if (valueA <= 0) {
@@ -114,12 +115,15 @@
   });
 
   sendResult.addEventListener('click', () => {
+    diffAB = valueA - valueB;
+    diffBA = valueB - valueA;
     if(result.textContent === '') {
       if(forthSet.textContent === '') {
         if(valueA >= 25 && diffAB >= 2 && valueA > valueB ) {
           checkSet();
           resetPoints();
-
+          console.log(diffAB);
+          console.log(valueA);
           countsValueA += 1 ;
           countsA.textContent = countsValueA;
           if(countsValueA === 3) {
@@ -166,6 +170,7 @@
     countsValueB = 0;
     countsA.textContent = countsValueA;
     countsB.textContent = countsValueB;
+    currentSet.textContent = '現在1セット目';
     result.textContent = '';
     firstSet.textContent = '';
     secondSet.textContent = '';
